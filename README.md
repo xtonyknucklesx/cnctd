@@ -19,48 +19,48 @@ Contributing
 License
 
 ## Project Overview
-cnctd.ai is a full-stack web application designed for secure and scalable deployment. The backend, built with Node.js and Express, handles the API logic and authentication, while the frontend, built with React.js, provides a modern, responsive user interface.
+**cnctd.ai** is a full-stack web application designed for secure and scalable deployment. The backend, built with **Node.js** and **Express**, handles the API logic and authentication, while the frontend, built with **React.js**, provides a modern, responsive user interface.
 
-The project utilizes JWT for secure authentication, Docker for containerization, and GitHub Actions for CI/CD. The platform follows a security-first approach with various tools for vulnerability scanning and monitoring.
+The project utilizes **JWT** for secure authentication, **Docker** for containerization, and **GitHub Actions** for CI/CD. The platform follows a security-first approach with various tools for vulnerability scanning and monitoring.
 
 ## Features
-JWT-based Authentication: Secure token-based user authentication.
-Role-Based Access Control (RBAC): Different user roles with restricted access to resources.
-RESTful API: API endpoints built with Express for secure and scalable interactions.
-Responsive Frontend: Built with React.js for a fast, interactive UI.
-CI/CD Automation: GitHub Actions for automated testing, building, and deployment.
-Security Auditing: npm audit for dependency vulnerability scanning and Docker image security checks.
-Containerization: Docker support for easy deployment and scaling.
+* **JWT-based Authentication:** Secure token-based user authentication.
+* **Role-Based Access Control (RBAC):** Different user roles with restricted access to resources.
+* **RESTful API:** API endpoints built with Express for secure and scalable interactions.
+* **Responsive Frontend:** Built with React.js for a fast, interactive UI.
+* **CI/CD Automation:** GitHub Actions for automated testing, building, and deployment.
+* **Security Auditing:** npm audit for dependency vulnerability scanning and Docker image security checks.
+* **Containerization:** Docker support for easy deployment and scaling.
 
 ## Tech Stack
 ### Backend:
-* Node.js with Express: Backend framework for building REST APIs.
-* PostgreSQL: Relational database for data storage (or replace with MySQL if needed).
-* JWT: Token-based authentication.
-* bcrypt: For secure password hashing.
-* Helmet.js: To set security-related HTTP headers.
-* Winston: Logging library.
+* **Node.js with Express:** Backend framework for building REST APIs.
+* **PostgreSQL:** Relational database for data storage.
+* **JWT:** Token-based authentication.
+* **bcrypt:** For secure password hashing.
+* **Helmet.js:** To set security-related HTTP headers.
+* **Winston:** Logging library.
 
 ### Frontend:
-* React.js: For building the user interface.
-* Axios: For making HTTP requests to the backend API.
-* React Router: For client-side routing.
-* Styled Components / Tailwind CSS: For styling (depending on your design approach).
+* **React.js:** For building the user interface.
+* **Axios:** For making HTTP requests to the backend API.
+* **React Router:** For client-side routing.
+* **Styled Components / Tailwind CSS:** For styling (depending on your design approach).
 
 ### DevOps:
-* Docker: Containerization of the backend and frontend.
-* GitHub Actions: For continuous integration and continuous deployment (CI/CD).
-* Nginx: (Optional) For reverse proxy and serving static files in production.
+* **Docker:** Containerization of the backend and frontend.
+* **GitHub Actions:** For continuous integration and continuous deployment (CI/CD).
+* **Nginx:** *(Optional)* For reverse proxy and serving static files in production.
 
 ## Setup and Installation
 
 ### Prerequisites
 Before setting up the project, ensure that you have the following installed:
 
-* Node.js (v16 or higher)
-* npm or yarn
-* Docker (if running with Docker)
-* Git
+* **Node.js** (v16 or higher)
+* **npm** or **yarn**
+* **Docker** (if running with Docker)
+* **Git**
 
 ### Backend Setup
 #### 1. Clone the repository:
@@ -104,6 +104,7 @@ From the *frontend/* directory, run: npm start
 
 * Backend: docker build -t cnctd-ai-backend ./backend
 * Frontend: docker build -t cnctd-ai-frontend ./frontend
+
 #### 2. Run the containers:
 
 * Backend: docker run -p 8000:8000 cnctd-backend
@@ -111,7 +112,7 @@ From the *frontend/* directory, run: npm start
 
 ## CI/CD Pipeline
 ### GitHub Actions
-cnctd.ai uses **GitHub Actions** for continuous integration and deployment. The pipeline is triggered on every push to the *main* branch.
+*cnctd.ai* uses **GitHub Actions** for continuous integration and deployment. The pipeline is triggered on every push to the *main* branch.
 
 The CI/CD pipeline includes:
 
