@@ -3,13 +3,18 @@
     "dockerComposeFile": "../docker-compose.yml",
     "service": "app",
     "workspaceFolder": "/app",
-    "extensions": [
-      "dbaeumer.vscode-eslint",  // Add relevant VS Code extensions
-      "esbenp.prettier-vscode"
-    ],
-    "settings": {
-      "terminal.integrated.shell.linux": "/bin/bash"
-    },
+    "customizations": {
+        "vscode": {
+           "extensions": 
+                    [
+                  "dbaeumer.vscode-eslint",
+                  "esbenp.prettier-vscode"
+                ],
+            "settings": {
+            "terminal.integrated.shell.linux": "/bin/bash"
+    }
+  }
+},
     "postCreateCommand": "npm install",
     "remoteUser": "node"
   }  
