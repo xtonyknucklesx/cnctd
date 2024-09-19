@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  frontend:
+    build:
+      context: ./frontend  # Directory where your frontend Dockerfile is located
+    ports:
+      - "3000:3000"  # Expose frontend on port 3000 (React/Angular default)
+    volumes:
+      - ./frontend:/app  # Sync local frontend code to the container
+    depends_on:
+      - backend  # Optional: Ensure backend starts before frontend, if needed
+
+  backend:
+    build:
+      context: ./backend  # Directory where your backend Dockerfile is located
+    ports:
+      - "8000:8000"  # Expose backend on port 8000
+    volumes:
+      - ./backend:/app  # Sync local backend code to the container
+    environment:
+      - DATABASE_URL=postgresql://postgres:password@db:5432/mydatabase
+    depends_on:
+      - db  # Ensure database starts before backend
+
+  db:
+    image: postgres:13  # Use PostgreSQL as the database
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydatabase
+    volumes:
+      - dbdata:/var/lib/postgresql/data  # Persist database data
+
+volumes:
+  dbdata:  # Define a volume for database persistence
