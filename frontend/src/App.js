@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Welcome to CNCTD!</h1>
+        <h1>Welcome to cnctd.ai!</h1>
         <p>
           This is the main App component.
         </p>
