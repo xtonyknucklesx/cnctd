@@ -5,20 +5,20 @@
     "private": true,
     "main": "index.js",
     "scripts": {
-      "start": "node index.js",            // Start the backend server
-      "dev": "nodemon index.js",           // Run the backend server in development mode
-      "test": "jest"                       // Run backend tests with Jest
+        "start": "node index.js",
+        "dev": "nodemon index.js",
+        "test": "jest"
     },
     "dependencies": {
-      "express": "^4.17.1",                // Express framework for building the API
-      "pg": "^8.6.0",                      // PostgreSQL client (for database)
-      "mongoose": "^5.13.3",               // Mongoose for MongoDB (if using MongoDB)
-      "cors": "^2.8.5",                    // Middleware for enabling CORS
-      "dotenv": "^10.0.0"                  // For loading environment variables from .env files
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.21.0",
+        "mongoose": "^5.13.3",
+        "pg": "^8.6.0"
     },
     "devDependencies": {
-      "nodemon": "^2.0.12",                // Automatically restarts server during development
-      "jest": "^27.0.6",                   // Testing framework for Node.js
-      "eslint": "^7.32.0"                  // Linter for code quality
+        "eslint": "^7.32.0",
+        "jest": "^27.0.6",
+        "nodemon": "^2.0.12"
     }
-  }  
+}

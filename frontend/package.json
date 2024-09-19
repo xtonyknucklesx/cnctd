@@ -4,31 +4,31 @@
     "description": "Frontend for the CNCTD app",
     "private": true,
     "scripts": {
-      "start": "react-scripts start",      // Starts the development server
-      "build": "react-scripts build",      // Builds the production version of the app
-      "test": "react-scripts test",        // Runs the tests
-      "eject": "react-scripts eject"       // Ejects the config (optional)
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
     },
     "dependencies": {
-      "react": "^17.0.2",
-      "react-dom": "^17.0.2",
-      "react-scripts": "4.0.3",            // React development tools
-      "axios": "^0.21.1"                   // Example of a library for making HTTP requests
+        "axios": "^0.21.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-scripts": "^4.0.3"
     },
     "devDependencies": {
-      "eslint": "^7.32.0",                 // Linter for code quality
-      "prettier": "^2.3.2"                 // Code formatter
+        "eslint": "^7.32.0",
+        "prettier": "^2.3.2"
     },
     "browserslist": {
-      "production": [
-        ">0.2%",
-        "not dead",
-        "not op_mini all"
-      ],
-      "development": [
-        "last 1 chrome version",
-        "last 1 firefox version",
-        "last 1 safari version"
-      ]
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
     }
-  }  
+}
