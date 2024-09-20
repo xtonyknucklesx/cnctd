@@ -32,10 +32,12 @@ app.post('/login', async (req, res) => {
     res.status(401).json({ error: 'Invalid credentials' });
 });
 
-// Secure route example
-app.get('/secure-data', authenticateToken, (req, res) => {
-    res.json({ data: 'Sensitive Data' });
+// Example
+app.get('/', (req, res) => {
+    res.status(200).json({ message: 'Welcome to CNCTD API' });
 });
+
+module.exports = app;
 
 // Token authentication middleware
 function authenticateToken(req, res, next) {
